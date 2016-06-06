@@ -1,0 +1,1 @@
+g++ -o publisher publisher.c -lzmq -lpthread -lrt

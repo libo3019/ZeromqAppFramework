@@ -1,0 +1,7 @@
+pub(server:1)-sub(client:N)
+pub(client:N)-sub(server:1)
+req(client:N)-rep(server:1)
+req(Server:1)-rep(Client:N(均分处理))
+push(client:N)-pull(server:1)
+push(server:1)-pull(client:N(均分消费))
+N:M == N:(1,1):M
